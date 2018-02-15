@@ -48,7 +48,7 @@ pass callables and arguments to be executed both pre and post connection::
 
     class ExampleService(AnvilWindowsService):
 
-         _svc_name_ = 'ExampleService'
+        _svc_name_ = 'ExampleService'
         _svc_display_name_ = 'Example Service'
 
         def pre_connect(args):
