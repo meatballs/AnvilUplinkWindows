@@ -30,7 +30,7 @@ Here is an example which loads the anvil key from an environment variable::
 
     class ExampleService(AnvilWindowsService):
 
-         _svc_name_ = 'ExampleService'
+        _svc_name_ = 'ExampleService'
         _svc_display_name_ = 'Example Service'
 
         def SvcDoRun(self):
@@ -83,7 +83,7 @@ Anvil callable functions can be included in the same module::
 
     class ExampleService(AnvilWindowsService):
 
-         _svc_name_ = 'ExampleService'
+        _svc_name_ = 'ExampleService'
         _svc_display_name_ = 'Example Service'
 
         def SvcDoRun(self):
@@ -106,7 +106,7 @@ libary::
 
     class ExampleService(AnvilWindowsService):
 
-         _svc_name_ = 'ExampleService'
+        _svc_name_ = 'ExampleService'
         _svc_display_name_ = 'Example Service'
 
         def SvcDoRun(self):
