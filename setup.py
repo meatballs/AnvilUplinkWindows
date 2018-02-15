@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='Anvil Uplink Windows Service',
+    name='Anvil_Uplink_Windows_Service',
     version='0.0.1',
     author='Owen Campbell',
     packages=find_packages('src'),
