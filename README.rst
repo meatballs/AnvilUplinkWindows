@@ -19,7 +19,7 @@ Windows service.
 
 Your subclass will need to include attributes for its name and a method named
 'SvcDoRun' This is the code  that will be executed when the service starts. If
-you only need to connect to and anvil app, there is a method which you can call
+you only need to connect to an anvil app, there is a method which you can call
 to do that.
 
 Here is an example which loads the anvil key from an environment variable::
