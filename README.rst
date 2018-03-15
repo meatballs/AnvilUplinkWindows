@@ -1,5 +1,5 @@
-Anvil Uplink Windows Service
-============================
+Anvil Uplink Windows
+====================
 
 A library to run uplink code for `Anvil <https://anvil.works/>`_ applications as
 a Windows Service.
@@ -8,7 +8,7 @@ Installation
 ------------
 .. code-block::
 
-    pip install anvil_uplink_windows_service
+    pip install anvil_uplink_windows
 
 
 Usage
@@ -25,7 +25,7 @@ to do that.
 Here is an example which loads the anvil key from an environment variable::
 
     import os
-    from anvil_uplink_windows_service import AnvilWindowsService
+    from anvil_uplink_windows.service import AnvilWindowsService
 
 
     class ExampleService(AnvilWindowsService):
@@ -43,7 +43,7 @@ pass callables and arguments to be executed both pre and post connection::
 
 
     import os
-    from anvil_uplink_windows_service import AnvilWindowsService
+    from anvil_uplink_windows.service import AnvilWindowsService
 
 
     class ExampleService(AnvilWindowsService):
@@ -73,7 +73,7 @@ Anvil callable functions can be included in the same module::
 
     import os
     import anvil.server
-    from anvil_uplink_windows_service import AnvilWindowsService
+    from anvil_uplink_windows.service import AnvilWindowsService
 
 
     @anvil.server.callable
@@ -96,7 +96,7 @@ libary::
 
     import os
     import anvil.server
-    from anvil_uplink_windows_service import AnvilWindowsService, manage_service
+    from anvil_uplink_windows.service import AnvilWindowsService, manage_service
 
 
     @anvil.server.callable
